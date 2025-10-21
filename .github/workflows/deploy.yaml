@@ -19,8 +19,8 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
         with:
-          application_name: frontend
-          environment_name: Frontend-env
+          application_name: frontendtest
+          environment_name: Frontendtest-env
           existing_bucket_name: elasticbeanstalk-eu-north-1-429583250310
           region: eu-north-1
           version_label: ${{ github.sha }}
